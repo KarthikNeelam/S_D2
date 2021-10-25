@@ -1,5 +1,6 @@
 // Import express.js
 const express = require("express");
+const { Student } = require('./models/student.js');
 
 // Create express app
 var app = express();
