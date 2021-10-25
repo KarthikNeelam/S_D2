@@ -17,9 +17,8 @@ const server = http.createServer(function(req, res) {
     res.statusCode = 200;
     // The type of content we are returning. Just plain text.
     res.setHeader("Content-Type", "text/plain");
-    console.log(req.url)
     // The plain text we are returning.
-    res.end("Hello, World Shekar!"); 
+    res.end("Hello, world!");
 });
 
 // Start the server listening on the port of the hostname.
