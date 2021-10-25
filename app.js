@@ -5,6 +5,17 @@ const { Student } = require('./models/student.js');
 // Create express app
 var app = express();
 
+app.get("/", function(req, res) {
+
+    // Instantiate a Student object using the student class definition
+    var student1 = new Student();
+    
+    // Examine the object you have created
+    console.log(student1);
+    
+    // Send some output to the browser - doesn't matter what it is right now
+    res.send("Hello world!");
+});
 // Create a get for root - /
 app.get("/", function(req, res) {
     res.send("Hello world!");
